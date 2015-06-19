@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+	<title>My Docs</title>
+
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">My Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#pacmon-22-manual">PACmon 2.2 Manual</a></li>
+        
+            <li><a href="#revision-history">REVISION HISTORY</a></li>
+        
+            <li><a href="#1-overview">1. Overview</a></li>
+        
+            <li><a href="#2-basic-operation">2. BASIC OPERATION</a></li>
+        
+            <li><a href="#3-additional-feature">3. ADDITIONAL FEATURE</a></li>
+        
+            <li><a href="#4-sw-upgrade">4. S/W UPGRADE</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<div class="toc">
+<ul>
+<li><a href="#pacmon-22-manual">PACmon 2.2 Manual</a><ul>
+<li><a href="#revision-history">REVISION HISTORY</a></li>
+<li><a href="#1-overview">1. Overview</a><ul>
+<li><a href="#11-what-is-pacmon">1.1  What is PACmon</a></li>
+<li><a href="#12-channels">1.2 Channels</a></li>
+<li><a href="#13-what-pacmon-measures">1.3 What PACmon measures</a></li>
+<li><a href="#14-what-pacmon-shows-with-measured-data">1.4 What PACmon Shows with Measured Data.</a></li>
+<li><a href="#141-realtime">1.4.1 Realtime</a><ul>
+<li><a href="#1411-line-graphs">1.4.1.1 Line Graphs</a></li>
+<li><a href="#1412-column-graphs">1.4.1.2 Column Graphs</a></li>
+</ul>
+</li>
+<li><a href="#142-after-measurement">1.4.2 After measurement</a><ul>
+<li><a href="#1421-timeline-graphs">1.4.2.1 Timeline Graphs</a></li>
+<li><a href="#1422-column-charts-for-average-current-voltage-and-power">1.4.2.2 Column Charts for Average Current, Voltage and Power</a></li>
+<li><a href="#1423-table-for-average-current-voltage-and-power">1.4.2.3 Table for Average Current, Voltage and Power</a></li>
+<li><a href="#1413-table-for-average-minimum-and-maximum-temperature">1.4.1.3 Table for Average, Minimum and Maximum Temperature</a></li>
+<li><a href="#1414-column-charts-for-proportions-of-each-state-in-cpus-gpus-and-devices">1.4.1.4 Column Charts for proportions of each state in CPUs, GPUs and Devices.</a></li>
+<li><a href="#1415-cpu-idles">1.4.1.5 CPU idles.</a></li>
+<li><a href="#1414-power-percentage-pie-graph">1.4.1.4 Power Percentage Pie Graph</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2-basic-operation">2. BASIC OPERATION</a><ul>
+<li><a href="#21-pc-setting">2.1 PC Setting</a><ul>
+<li><a href="#211-proxy-setting">2.1.1 proxy setting</a></li>
+<li><a href="#212-rndis-setting">2.1.2 RNDIS setting</a></li>
+</ul>
+</li>
+<li><a href="#22-connection-to-pacmon-server-through-web-browser">2.2 Connection to PACmon server through Web Browser</a></li>
+<li><a href="#23-settings">2.3 Settings</a><ul>
+<li><a href="#231-adc-sampling-frequency-hz">2.3.1 ADC Sampling Frequency (Hz)</a></li>
+<li><a href="#232-test-duration-sec">2.3.2 Test Duration (sec)</a></li>
+<li><a href="#233-use-high-voltagecurrent">2.3.3 Use High Voltage/Current</a></li>
+<li><a href="#234-shunt-amp-and-names-in-voltage-channel-table">2.3.4 Shunt, Amp and Names in Voltage Channel Table</a></li>
+</ul>
+</li>
+<li><a href="#24-profiling-settings">2.4 Profiling Settings</a></li>
+<li><a href="#25-time-sync">2.5 Time Sync</a></li>
+<li><a href="#26-measuring">2.6 Measuring</a></li>
+<li><a href="#25-analysis-result">2.5 Analysis Result</a></li>
+</ul>
+</li>
+<li><a href="#3-additional-feature">3. ADDITIONAL FEATURE</a></li>
+<li><a href="#4-sw-upgrade">4. S/W UPGRADE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="pacmon-22-manual">PACmon 2.2 Manual</h1>
+<blockquote>
+<p>This manual uses the <a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax.</p>
+</blockquote>
+<h2 id="revision-history">REVISION HISTORY</h2>
+<table>
+<thead>
+<tr>
+<th>head1</th>
+<th>head2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hello</td>
+<td>foo</td>
+</tr>
+<tr>
+<td>hi</td>
+<td>bar</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-overview">1. Overview</h2>
+<h3 id="11-what-is-pacmon">1.1  What is PACmon</h3>
+<blockquote>
+<p>PACmon (Power Acquisition Control and Monitoring) is a hardward and software solution which measures information of power feature of developemnt board of Exynose base and provides developers and testers with a web-based monitoring and profiling tool. </p>
+</blockquote>
+<h3 id="12-channels">1.2 Channels</h3>
+<blockquote>
+<p>PACmon has eight low voltage channels, two high voltage chnanels and four temperature channels.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Channel Type</th>
+<th>The Number of Channels</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low</td>
+<td>2</td>
+</tr>
+<tr>
+<td>High</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13-what-pacmon-measures">1.3 What PACmon measures</h3>
+<blockquote>
+<p>PACmon measures voltage, current and power through each low and high channels and temperature through temperature channels.</p>
+</blockquote>
+<hr />
+<h3 id="14-what-pacmon-shows-with-measured-data">1.4 What PACmon Shows with Measured Data.</h3>
+<h3 id="141-realtime">1.4.1 Realtime</h3>
+<h4 id="1411-line-graphs">1.4.1.1 Line Graphs</h4>
+<blockquote>
+<p>During measurement Pacmon shows line graphs for power and one temperature updated on a realtime basis which shows how values have changed as time has passes.</p>
+</blockquote>
+<h4 id="1412-column-graphs">1.4.1.2 Column Graphs</h4>
+<blockquote>
+<p>Also, PACmon displays realtime current, voltage, power values for each channels through column graphs as column graphs.</p>
+</blockquote>
+<hr />
+<h3 id="142-after-measurement">1.4.2 After measurement</h3>
+<blockquote>
+<p>After measuring PACmon analyzes the measured data and provides many useful information.</p>
+</blockquote>
+<h4 id="1421-timeline-graphs">1.4.2.1 Timeline Graphs</h4>
+<p>s</p>
+<h4 id="1422-column-charts-for-average-current-voltage-and-power">1.4.2.2 Column Charts for Average Current, Voltage and Power</h4>
+<p>a</p>
+<h4 id="1423-table-for-average-current-voltage-and-power">1.4.2.3 Table for Average Current, Voltage and Power</h4>
+<p>a</p>
+<h4 id="1413-table-for-average-minimum-and-maximum-temperature">1.4.1.3 Table for Average, Minimum and Maximum Temperature</h4>
+<blockquote>
+<p>PACmon displays average values for temperature data measured during measurement duration for each channel respectively.</p>
+</blockquote>
+<h4 id="1414-column-charts-for-proportions-of-each-state-in-cpus-gpus-and-devices">1.4.1.4 Column Charts for proportions of each state in CPUs, GPUs and Devices.</h4>
+<blockquote>
+<p>PACmon displays column charts for proportions of Each State for CPUs, GPUs and Devices. </p>
+</blockquote>
+<h4 id="1415-cpu-idles">1.4.1.5 CPU idles.</h4>
+<p>a</p>
+<h4 id="1414-power-percentage-pie-graph">1.4.1.4 Power Percentage Pie Graph</h4>
+<blockquote>
+<p>PACmon displays differently for two cases; when high voltage channels are measured and when only low voltage channels are measured.
+when only low voltage channels are measured it shows its power proportion to its total sum of powers. 
+When high voltage channels are measured, it shows power proportion of each channel to the power of eighth channel.</p>
+</blockquote>
+<hr />
+<h2 id="2-basic-operation">2. BASIC OPERATION</h2>
+<h3 id="21-pc-setting">2.1 PC Setting</h3>
+<blockquote>
+<p>To run PACmon server and connect to it via web browser, you need to </p>
+</blockquote>
+<h4 id="211-proxy-setting">2.1.1 proxy setting</h4>
+<h4 id="212-rndis-setting">2.1.2 RNDIS setting</h4>
+<h3 id="22-connection-to-pacmon-server-through-web-browser">2.2 Connection to PACmon server through Web Browser</h3>
+<h3 id="23-settings">2.3 Settings</h3>
+<p><img alt="Figure 1.1" src="http://55.vs.woobi.co.kr/settings.PNG" /></p>
+<h4 id="231-adc-sampling-frequency-hz">2.3.1 ADC Sampling Frequency (Hz)</h4>
+<blockquote>
+<p>You can set ADC sampling frequency. This value is connected to PACmon DB and used to determine sampling freqency in Kernel.</p>
+</blockquote>
+<h4 id="232-test-duration-sec">2.3.2 Test Duration (sec)</h4>
+<blockquote>
+<p>This is the time duration during which measurement proceeds.</p>
+</blockquote>
+<h4 id="233-use-high-voltagecurrent">2.3.3 Use High Voltage/Current</h4>
+<blockquote>
+<p>You can determin whether to use high voltage channels ( channel 8 and 9 ). If you check the checkbox then high voltage channels will be measured as long as low voltage channels.</p>
+</blockquote>
+<h4 id="234-shunt-amp-and-names-in-voltage-channel-table">2.3.4 Shunt, Amp and Names in Voltage Channel Table</h4>
+<blockquote>
+<p>You can set shunt resitance, amplification and name for each voltage channel. These values must corresponde to the real values on the PACmon board. shunt resistance and amplification values will be used in analysis process. </p>
+<p>When you are using channel 4 for display then you can set the channel's name, for exmaple, "disp". These names will be used only in display.</p>
+</blockquote>
+<h3 id="24-profiling-settings">2.4 Profiling Settings</h3>
+<h3 id="25-time-sync">2.5 Time Sync</h3>
+<h3 id="26-measuring">2.6 Measuring</h3>
+<p>a</p>
+<h3 id="25-analysis-result">2.5 Analysis Result</h3>
+<hr />
+<h2 id="3-additional-feature">3. ADDITIONAL FEATURE</h2>
+<hr />
+<h2 id="4-sw-upgrade">4. S/W UPGRADE</h2>
+<pre><code class="python">def sum(a, b):
+    return a+ b
+
+def bbb():
+    return 3
+
+
+</code></pre></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script>var base_url = '.';</script>
+        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+        <script src="./js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 0.14.0
+Build Date UTC : 2015-06-19 05:44:49.757205
+-->
